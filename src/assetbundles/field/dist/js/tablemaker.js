@@ -195,8 +195,10 @@ Craft.TableMaker = Garnish.Base.extend(
         // re-do columns of rowsTable
         for (var colId in this.columns)
         {
-            // force type of col to be textual
-            this.columns[colId].type = 'multiline';
+            if (this.columns[colId].type == 'url') {
+                this.columns[colId].placeholder = 'http://';
+            }
+
             tableHtml += '<th scope="col" class="header">'+(this.columns[colId].heading ? this.columns[colId].heading : '&nbsp;')+'</th>';
         }
 

@@ -269,7 +269,7 @@ class TableMakerField extends Field
                     'heading' => $val['heading'],
                     'align' => $val['align'],
                     'width' => $val['width'],
-                    'type' => 'multiline'
+                    'type' => $val['type'] ?? 'multiline'
                 );
             }
         }
@@ -323,6 +323,17 @@ class TableMakerField extends Field
                     'center' => Craft::t('tablemaker', 'Center'),
                     'right'  => Craft::t('tablemaker', 'Right')
                 )
+            ),
+            'type' => array(
+                'heading' => Craft::t('tablemaker', 'Type'),
+                'type' => 'select',
+                'options' => array(
+                    'multiline' => Craft::t('tablemaker', 'Text'),
+                    'url' => Craft::t('tablemaker', 'Link'),
+                    'date' => Craft::t('tablemaker', 'Date'),
+                    'email' => Craft::t('tablemaker', 'E-Mail')
+                ), 
+                'width' => '30'
             )
         );
 
