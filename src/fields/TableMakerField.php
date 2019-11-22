@@ -269,7 +269,7 @@ class TableMakerField extends Field
                     'heading' => $val['heading'],
                     'align' => $val['align'],
                     'width' => $val['width'],
-                    'type' => 'singleline'
+                    'type' => 'multiline'
                 );
             }
         }
@@ -280,7 +280,7 @@ class TableMakerField extends Field
                     'heading' => '',
                     'align' => '',
                     'width' => '',
-                    'type' => 'singleline'
+                    'type' => 'multiline'
                 )
             );
         }

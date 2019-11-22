@@ -1,8 +1,8 @@
 {
-    "name": "supercool/tablemaker",
+    "name": "hfg/tablemaker",
     "description": "A user-definable table field type for Craft CMS",
     "type": "craft-plugin",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "keywords": [
         "craft",
         "cms",
@@ -21,6 +21,10 @@
         {
             "name": "Supercool Ltd",
             "homepage": "http://www.supercooldesign.co.uk/"
+        },
+        {
+            "name": "Niklas Sonnenschein",
+            "homepage": "https://niklassonnenschein.de"
         }
     ],
     "require": {
